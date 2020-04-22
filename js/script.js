@@ -1,12 +1,3 @@
-function initMap() {
-  var iit_tower = {lat: 41.831602, lng: -87.627231};
-  var map = new google.maps.Map(document.getElementById('map'), {
-		  zoom: 18, 
-		  center: iit_tower,
-	      mapTypeId: 'satellite'
-	  });
-  var marker = new google.maps.Marker({position: iit_tower, map: map});
-}
 
 //Adding slide show with nav////
 var slideIndex = 1;
@@ -36,5 +27,15 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
 
 window.onload = changeImg;
