@@ -27,15 +27,25 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat:41.834433,lng: -87.627020};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
+// Initialize and adding  map//
+
+var map;
+function initMap()
+{
+    // The location of//
+var latlang={lat:4.710859,lng:-74.074955};
+mapa=new google.maps.Map(
+		document.getElementById('gmaps'),
+		{center: new google.maps.LatLng(41.835812, -87.625853), zoom:15});
+//^map centered mtcc//
+var marker= new google.maps.Marker({position:latlang,map:map});
+//movement control w marker//
+marker= new google.maps.Marker({
+	map:map,
+	draggable:true,
+	animation:google.maps.Animation.BOUNCE,
+	position:new google.maps.LatLng(8.2, -75.90),
+});
 }
 
-window.onload = changeImg;
+
