@@ -176,3 +176,11 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+
+/*h3+p font color*/
+p {
+   color: #d9d9d9;
+}
+
+h3 { color: #d9d9d9;
+}
