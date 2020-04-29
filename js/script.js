@@ -1,4 +1,3 @@
-
 //Adding slide show with nav////
 var slideIndex = 1;
 showSlides(slideIndex);
