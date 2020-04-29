@@ -31,10 +31,10 @@ function showSlides(n) {
  function initMap() {
    // IIT Location//
    var uluru = {lat:41.834433,lng: -87.627020};
-   // The map, centered on IIT campus//
+   //  map, centered on IIT campus//
    var map = new google.maps.Map(
        document.getElementById('map'), {zoom: 8, center: uluru});
-   // The marker, positioned at Uluru//
+   // add marker//
    var marker = new google.maps.Marker({position: uluru, map: map});
                                       
                                       
