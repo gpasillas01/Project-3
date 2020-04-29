@@ -36,5 +36,6 @@ function showSlides(n) {
        document.getElementById('map'), {zoom: 8, center: uluru});
    // add marker//
    var marker = new google.maps.Marker({position: uluru, map: map});
+ }
                                       
                                       
